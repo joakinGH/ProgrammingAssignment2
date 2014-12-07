@@ -36,3 +36,7 @@ cacheSolve <- function(x, ...) {
   m
 }
 
+
+a <- makeCacheMatrix(rbind(c(1, -1/4), c(-1/4, 1)))
+cacheSolve(a)
+cacheSolve(a)%*%a$get()
