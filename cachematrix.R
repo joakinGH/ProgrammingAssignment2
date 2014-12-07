@@ -1,9 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Programming Assignment 2: Lexical Scopin 
 
-## Write a short comment describing this function
-
-# The first function, makeCacheMatrix creates a special "matrix", 
+# The first function, "makeCacheMatrix" creates a special "matrix", 
 # which is really a list containing several functions
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -21,7 +18,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## The "cacheSolve" function computes the inverse matrix.
 #
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
@@ -36,7 +33,3 @@ cacheSolve <- function(x, ...) {
   m
 }
 
-
-a <- makeCacheMatrix(rbind(c(1, -1/4), c(-1/4, 1)))
-cacheSolve(a)
-cacheSolve(a)%*%a$get()
